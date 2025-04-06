@@ -4,10 +4,27 @@
     "license": "proprietary",
     "private": true,
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "olvlvl/composer-attribute-collector": "^2.0"
+    },
     "autoload": {
         "psr-4": {
             "Sample\\": "src/"
+        },
+        "files": [
+            "vendor/attributes.php"
+        ]
+    },
+    "extra": {
+    "composer-attribute-collector": {
+        "include": [
+            "src/AutoLoad/Target"
+        ]
+    }
+    },
+    "config": {
+        "allow-plugins": {
+            "olvlvl/composer-attribute-collector": true
         }
     }
 }
