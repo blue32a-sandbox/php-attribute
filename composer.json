@@ -1,0 +1,13 @@
+{
+    "name": "blue32a-sandbox/php-attribute",
+    "type": "project",
+    "license": "proprietary",
+    "private": true,
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sample\\": "src/"
+        }
+    }
+}
